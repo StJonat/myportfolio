@@ -1,0 +1,127 @@
+﻿<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+
+	<!-- Базовые потребности страницы
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Spark</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Меты для телефонов
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/project.css"/>
+
+	<!-- Фавиконки
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+</head>
+<body>
+
+
+	<!-- Основной макет страницы
+	================================================== -->
+	
+	<div id="preloader">
+		<div id="status">&nbsp;</div>
+	</div>	
+
+
+	<div id="project">
+				<div class="container">
+					<div class="sixteen columns">
+						<h1>Название проекта</h1> 
+					</div>
+					<div class="ten columns">
+						<ul class="bxslider">
+							<li><img src="images/gallery/3.jpg" alt=""></li>
+							<li><img src="images/gallery/4.jpg" alt=""></li>
+							<li><img src="images/gallery/5.jpg" alt=""></li>
+						</ul>
+					</div>
+					<div class="six columns">
+						<img src="images/gallery/6.jpg" alt=""> 
+					</div>
+					<div class="sixteen columns"> 
+						<div class="separator-space"></div> 
+					</div>	
+					<div class="one-third column">
+						<h6>Хз чё тут написать</h6> 
+						<p>Пускай тут будет описание проекта</p>
+					</div>
+					<div class="one-third column">
+						<h6>Хз чё тут написать</h6> 
+						<p>Пускай тут будет описание проекта</p>
+					</div>
+					<div class="one-third column">
+						<h6>Хз чё тут написать</h6> 
+						<p>Пускай тут будет описание проекта</p>
+					</div>
+					<div class="sixteen columns"> 
+						<div class="separator-space"></div> 
+					</div>	
+					<div class="sixteen columns">
+						<div class="link-project"><div class="cl-effect-8"><a href="#"><span>посетить сайт</span></a></div></div>	
+					</div>
+				</div>
+	</div>	
+	
+
+
+	
+	
+
+
+
+
+
+
+	
+
+	<!-- JAVASCRIPT
+    ================================================== -->
+  
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/modernizr.custom.js"></script>
+<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+<script type="text/javascript">
+//Preloader
+   
+	$(window).load(function() {
+		$("#status").fadeOut();
+		$("#preloader").delay(350).fadeOut("slow");
+	})  
+
+	
+
+
+//Slider	
+	
+	$(document).ready(function(){
+		$('.bxslider').bxSlider({
+			adaptiveHeight: true,
+			touchEnabled: true,
+			pager: false,
+			controls: true,
+			auto: true,
+			slideMargin: 1
+		});
+	});	
+	
+</script>
+
+
+<!-- Конец
+================================================== -->
+</body>
+</html>	
